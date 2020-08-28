@@ -19,5 +19,7 @@ While this isn't the biggest table in the world, it did have potential to become
 Next steps: 
 <br/>
 If I had time, I would have absolutely cleaned up the UI further. There is something very calming about being able to perfectly match a mock up :) 
-I would have also completed the final task - to implement status filtering. 
+I would have also completed the final task - to implement status filtering. I chose to spend a little more time on the ui than moving ahead to the final step, since the UI work was higher on the assigned priority list.  
+<br/>
+Thanks so much for giving me the opportunity to complete this! 
 
