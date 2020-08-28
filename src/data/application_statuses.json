@@ -215,5 +215,21 @@
         "color": 1,
         "reserved": true,
         "_order": 15
+    },
+    {
+        "id": 196,
+        "label": "Archived",
+        "school_admin_view_access": true,
+        "school_admin_move_access": true,
+        "school_admin_move_district": true,
+        "email_bool": true,
+        "emailtemplate": {
+            "id": 83,
+            "title": "Declination"
+        },
+        "status_type": 5,
+        "color": 1,
+        "reserved": true,
+        "_order": 15
     }
 ]
