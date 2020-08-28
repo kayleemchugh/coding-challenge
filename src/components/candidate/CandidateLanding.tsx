@@ -6,14 +6,14 @@ import CandidateList from './CandidateList';
 
 export default function CandidateLanding() {
 
-    const [candidates, setCandidates] = React.useState<CandidateRequest>() 
+    const [candidates, setCandidates] = React.useState<CandidateRequest>()
 
     React.useEffect(() => {
 
-        var candidatesArray:  CandidateRequest = JSON.parse(JSON.stringify(candidatesFromFile));
+        var candidatesArray: CandidateRequest = JSON.parse(JSON.stringify(candidatesFromFile));
 
         setCandidates(candidatesArray)
-    
+
     }, [])
 
     return (
@@ -29,9 +29,11 @@ export default function CandidateLanding() {
                         </div>
                     </div>
                 </div>
-                <div className="px-5 pt-2">
-                    {candidates?.count} candidates
-                    <CandidateList candidates={candidates?.results}/>
+                <div className="px-5 pt-2 h-full bg-gray-200">
+                    <div className="pb-2">
+                        {candidates?.count} candidates
+                    </div>
+                    <CandidateList candidates={candidates?.results} />
                 </div>
             </div>
             <div>

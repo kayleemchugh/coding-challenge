@@ -28,7 +28,7 @@ export default function CandidateList({
                 </div>
             </div>
             <hr></hr>
-            {candidates?.map((candidate, index) => (
+            {candidates?.map((candidate) => (
                 <div key={candidate.id}>
                     <CandidateRow candidate={candidate} />
                 </div>

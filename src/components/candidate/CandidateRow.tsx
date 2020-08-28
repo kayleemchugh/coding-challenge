@@ -1,6 +1,8 @@
 import React from 'react';
-import { Candidate } from '../../models/Candidate'
+import { Candidate, Application } from '../../models/Candidate'
 import ApplicationRow from './ApplicationRow';
+var moment = require('moment');
+
 
 type CandidateRowProps = {
     candidate: Candidate | undefined;
@@ -9,6 +11,8 @@ type CandidateRowProps = {
 export default function CandidateRow({
     candidate
 }: CandidateRowProps) {
+
+    const formattedDate = moment(candidate?.profile.updated).format('LLL')
 
     const [expand, setExpand] = React.useState(false)
 
@@ -24,13 +28,13 @@ export default function CandidateRow({
                         {candidate?.name}
                     </div>
                     <div className="w-1/6">
-                        {/* {candidate.applications.lastIndex.} */}
+                        {/* {candidate?.applications[0]} */}
                     </div>
                     <div className="w-1/6">
                         {candidate?.applications.length}
                     </div>
                     <div className="w-1/6">
-                        {candidate?.profile.updated}
+                    {formattedDate}
                     </div>
                 </div>
                 <hr></hr>

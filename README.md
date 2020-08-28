@@ -8,6 +8,7 @@ My process:
 Upon receiving this assignment, two thoughts immediately came to mind -- 
 <br />
 -- I didn't want to waste time parsing weakly typed objects.
+<br />
 -- I didn't want to get caught up fine tuning the styling and ui work. 
 <br />
 I therefore decided to prioritize adding in a css framework or library, and adding Typescript to the project so I could utilize strictly typed objects. I imported the proper libraries through yarn, set up my models, and got to work!
