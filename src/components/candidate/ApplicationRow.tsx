@@ -51,7 +51,7 @@ export default function ApplicationRow({
     const body = (
         <div style={modalStyle} className={classes.paper}>
             <div>
-               <h2 id="simple-modal-title"><b>Candidate Details</b></h2>
+               <h2 id="simple-modal-title" className="text-green-500"><b>Candidate Details</b></h2>
                 <div>
                     {candidate.name}
                 </div>
@@ -59,16 +59,22 @@ export default function ApplicationRow({
                     {candidate.email}
                 </div>
                 <div>
-                    {candidate.profile.phone_cell}
+                    Home cell: {candidate.profile.phone_cell}
+                </div>
+                <div>
+                    Work phone: {candidate.profile.phone_work}
+                </div>
+                <div>
+                    Nimble score: {candidate.profile.nimble_score}
                 </div>
             </div>
-            <div id="simple-modal-description" className="flex flex-col pt-2">
-            <h2 id="simple-modal-title"><b>Position Details</b></h2>
+            <div className="flex flex-col pt-2">
+            <h2 className="text-green-500"><b>Position Details</b></h2>
                 <div>
                     {application?.role.title}
                 </div>
                 <div>
-                    {application?.role.school}
+                    {application?.role.jobboard_title}
                 </div>
             </div>
         </div>

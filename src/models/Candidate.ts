@@ -36,12 +36,9 @@ export interface SchoolApplicationRole {
     title: string,
     status: number,
     active_status: number,
-    school: School
+    jobboard_title: string | null
 }
 
-export interface School {
-    id: number
-}
 
 export interface ApplicationNewStatus {
     id: number,
